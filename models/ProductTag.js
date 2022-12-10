@@ -1,12 +1,13 @@
+// Import sequelize and database connection
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection');
 
+// Create class ProductTag that extends the Model class
 class ProductTag extends Model {}
 
+// Initialize ProductTag model with the following properties
 ProductTag.init(
   {
-    // define columns
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -29,6 +30,7 @@ ProductTag.init(
     },
   },
   {
+    // Configure model settings
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -37,4 +39,5 @@ ProductTag.init(
   }
 );
 
+// Export ProductTag model
 module.exports = ProductTag;
