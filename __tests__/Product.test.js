@@ -4,7 +4,6 @@ describe('Product', () => {
     describe('Product model', () => {
         test('should have the correct properties', () => {
             const product = new Product();
-//  
             expect(product).toHaveProperty('id');
             expect(product).toHaveProperty('product_name');
             expect(product).toHaveProperty('price');
