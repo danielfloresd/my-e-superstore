@@ -122,14 +122,14 @@ describe('app', () => {
 
     describe("DELETE /api/products/:id", () => {
         it('should return a 200 status code', async () => {
-            const response = await request(app).delete('/api/products/1');
+            const response = await request(app).delete('/api/products/2');
             expect(response.statusCode).toBe(200);
         });
     });
 
     describe("DELETE /api/tags/:id", () => {
         it('should return a 200 status code', async () => {
-            const response = await request(app).delete('/api/tags/1');
+            const response = await request(app).delete('/api/tags/9');
             expect(response.statusCode).toBe(200);
         });
     });
@@ -137,7 +137,7 @@ describe('app', () => {
     
     describe("DELETE /api/categories/:id", () => {
         it('should return a 200 status code', async () => {
-            const response = await request(app).delete('/api/categories/1');
+            const response = await request(app).delete('/api/categories/6');
             expect(response.statusCode).toBe(200);
         });
     });
