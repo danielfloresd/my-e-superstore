@@ -30,7 +30,6 @@ ProductTag.init(
     },
   },
   {
-    // Configure model settings
     sequelize,
     timestamps: false,
     freezeTableName: true,
